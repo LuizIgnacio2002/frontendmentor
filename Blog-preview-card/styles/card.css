@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+body {
+    display: flex; 
+    flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: 'Figtree', sans-serif; /* Asegúrate de tener la fuente Figtree disponible */
+    font-weight: 600; /* Peso de la fuente */
+    font-size: 16px; /* Tamaño de la fuente para el texto del cuerpo */
+  }
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 20px 20px 0px hsl(0, 0%, 7%);
+  width: min(340px, 90%); /* Responsivo */
+  height: min(475px, 100%); /* Responsivo */
+}
+
+.card__image__view {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.topic {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 0; 
+}
+
+.date {
+    color: hsl(0, 0%, 7%);
+    font-size: 0.8em;
+    margin-top: 21px;    
+}
+
+.title {
+    color: hsl(0, 0%, 7%);
+    font-size: 1.53em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800; /* Peso de la fuente para .title */
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%); /* Cambia este valor al color que prefieras */
+    cursor: pointer; /* Cambia el cursor a una mano */
+  }
+
+.content {
+    color: hsl(0, 0%, 50%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5; /* Altura de línea */
+}
+
+.about {
+    margin-top: 0.1875rem;
+    display: flex;
+    align-items: center;
+}
+
+.about__image {
+    width: 32px;
+}
+
+.about__text {
+    color:hsl(0, 0%, 7%);
+    font-weight: 800;
+    font-size: 0.875rem;
+    padding: 0 0.75rem;
+}
