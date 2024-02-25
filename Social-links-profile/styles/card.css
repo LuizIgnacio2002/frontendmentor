@@ -1,20 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body {
     display: flex; /* Cambia el modelo de caja a flexible */
     flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
     justify-content: center; /* Centra los elementos flexibles verticalmente */
     align-items: center; /* Centra los elementos flexibles horizontalmente */
-    height: 100vh; 
+    min-height: 150vh; /* Asegura que el cuerpo tenga al menos el 100% de la altura de la ventana gráfica */
+    padding-left: 100px;	
+    font-family: 'Inter', sans-serif; /* Asegúrate de tener la fuente Inter disponible */
   }
 
   .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    width: 350px;
-    padding: 20px;
-    border: 1px solid hsl(0, 0%, 7%);
-    box-shadow: 20px 20px 0px hsl(0, 0%, 7%);
-    width: min(340px, 90%); /* Responsivo */
-    height: min(475px, 100%); /* Responsivo */
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    padding: 15px;
+    width: min(355px, 100%); /* Responsivo */
+    height: min(975px, 100%); /* Responsivo */
+    
   }
 
   .upper__details {
@@ -25,21 +26,62 @@ body {
 
 .card__image__view {
     border-radius: 50%; /* makes the image round */
-    width: 100px; /* sets the width of the image */
-    height: 100px; /* sets the height of the image */
-    margin-bottom: 10px; /* adds space between the image and the text */
+    width: 90px; /* sets the width of the image */
+    height: 90px; /* sets the height of the image */
+    margin-top: 24px; /* adds space between the image and the text */
+    margin-left: 5px;
+    margin-bottom: 20px; /* adds space between the image and the text */
   }
 
   .card__name {
+    color: hsl(0, 0%, 100%);
     font-size: 1.5em; /* sets the font size of the name */
     font-weight: 800; /* sets the font weight of the name */
     margin-bottom: 10px; /* adds space between the name and the location */
+    margin-top: 8px; /* adds space between the image and the name */ 
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif; /* sets the font family of the name */
   }
 
   .card__location {
-    
+    color: hsl(75, 94%, 57%);
+    font-weight: 900;
+    margin-top: 0px; /* adds space between the name and the location */
+    margin-left: 5px;
   }
 
   .card__bio {
-    
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif; /* sets the font family of the bio */
+    font-size: 0.87em; /* sets the font size of the bio */
+    margin-top: 10px; /* adds space between the location and the bio */
   }
+
+  .lower__details {
+    display: flex;  
+    flex-direction: column; /* makes the children of the lower__details flex container to be displayed in a column */
+    justify-content: center; /* centers the children of the lower__details flex container vertically */
+    align-items: center; /* centers the children of the lower__details flex container horizontally */
+    gap: 18px; /* adds space between the children of the lower__details flex container */
+    margin-top: 14px; /* adds space between the bio and the social links */
+    margin-bottom: 40px; /* adds space between the social links and the bottom of the card */
+}
+
+a {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 12px;
+    border-radius: 5px;
+    white-space: nowrap; /* prevents the text from wrapping to a new line */
+    width: 85%; /* makes the link take up the full width of the container */
+    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+    text-align: center; /* centers the text horizontally */
+    text-decoration: none; /* removes the underline from the link */
+    font-weight: 600; /* sets the font weight of the link */
+    font-size: 0.9em; /* sets the font size of the link */
+}
+
+a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
