@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
 body {
-    display: flex; 
+    display: flex; /* Cambia el modelo de caja a flexible */
     flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra los elementos flexibles verticalmente */
+    align-items: center; /* Centra los elementos flexibles horizontalmente */
     height: 100vh; 
     font-family: 'Figtree', sans-serif; /* Asegúrate de tener la fuente Figtree disponible */
     font-weight: 600; /* Peso de la fuente */

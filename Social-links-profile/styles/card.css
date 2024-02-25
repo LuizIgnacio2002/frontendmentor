@@ -1,0 +1,45 @@
+body {
+    display: flex; /* Cambia el modelo de caja a flexible */
+    flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
+    justify-content: center; /* Centra los elementos flexibles verticalmente */
+    align-items: center; /* Centra los elementos flexibles horizontalmente */
+    height: 100vh; 
+  }
+
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 20px 20px 0px hsl(0, 0%, 7%);
+    width: min(340px, 90%); /* Responsivo */
+    height: min(475px, 100%); /* Responsivo */
+  }
+
+  .upper__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__image__view {
+    border-radius: 50%; /* makes the image round */
+    width: 100px; /* sets the width of the image */
+    height: 100px; /* sets the height of the image */
+    margin-bottom: 10px; /* adds space between the image and the text */
+  }
+
+  .card__name {
+    font-size: 1.5em; /* sets the font size of the name */
+    font-weight: 800; /* sets the font weight of the name */
+    margin-bottom: 10px; /* adds space between the name and the location */
+  }
+
+  .card__location {
+    
+  }
+
+  .card__bio {
+    
+  }
