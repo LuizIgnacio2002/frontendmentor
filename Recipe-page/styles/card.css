@@ -14,7 +14,6 @@ body {
     align-items: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 90px;
-    color: chartreuse;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 20px;
@@ -24,23 +23,60 @@ body {
 }
 
 .recipe__content {
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .recipe__image {
+  
+}
 
+img {
+  width: 525px;
+  border-radius: 20px;
 }
 
 .recipe__header {
     
 }
 
+.recipe__header__title{
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+}
+
+.recipe__header__text{
+  color: hsl(30, 18%, 87%);
+}
+
 .recipe__time {
-    
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__time__title{
+  color: hsl(332, 51%, 32%);
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+.recipe__time__content{
+  padding-left: 35px;
 }
 
 .recipe__ingredients {
-    
+  border-bottom: black 2px;
+}
+
+.recipe__ingredients__title{
+  color: hsl(14, 45%, 36%);
+}
+
+.recipe__ingredients__content{
+
 }
 
 .recipe__instructions {
